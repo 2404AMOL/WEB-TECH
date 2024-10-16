@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+    <style>
+        body{
+            background: rgba(255, 255, 255, 0.764);
+        }
+        #bulb{
+            height: 350px;
+            width: 350px;
+            /* border: 1px solid; */
+            border-radius: 50%;
+            margin: 0 auto;
+            background: #f1f1f4;
+        }
+        #cap{
+            height: 150px;
+            width: 180px;
+            border: 5px solid;
+            margin: -20px auto;
+            border-top: none;
+            background: rgb(56, 56, 56);
+            box-shadow: 1px 15px 20px,inset -10px -15px 20px rgb(56, 56, 56);
+            filter:drop-shadow(1px 15px 24px black);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .lines{
+            width: 100%;
+            height: 10px;
+            border: 2px solid black;
+            background-color: black;
+            margin-top: 20px;
+        }
+        button{
+            height: 75px;
+            width: 200px;
+            border: none;
+            background: #f5f5ff;
+            font-size: 20px;
+            margin-left: 10px;
+            font-weight: 700;
+            filter: drop-shadow(1px 20px 30px #fff);
+            box-shadow: -1px 2px 3px 4px #edf1f4;
+        }
+        button:focus{
+            cursor: pointer;
+            box-shadow: 11px 10px 20px #edf1f4,inset -10px -15px 20px #fff;
+        }
+        .Buttons{
+            height: 100px;
+            width: 400px;
+            /* border: 1px solid; */
+            margin: 75px auto;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <main> 
+        <div id="bulb">
+        </div>
+        <div id="cap">
+            <div class="lines"></div>
+            <div class="lines"></div>
+            <div class="lines"></div>
+        </div>
+
+        <div class="Buttons">
+            <button onclick="bulbOn()">ON</button>
+            <button onclick="bulbOff()">OFF</button>
+        </div>
+    </main>
+
+    <script>
+        let bulb = document.getElementById("bulb");
+        let cap = document.getElementById("cap");
+
+        function bulbOn(params) {
+            
+            bulb.style.background="yellow";
+            bulb.style.filter=" drop-shadow(1px 15px 35px yellow) ";
+        }
+
+        function bulbOff(params) {
+            
+            bulb.style.background="#f1f1f4";
+            bulb.style.filter=" drop-shadow(1px 15px 24px #fff) ";
+        }
+
+
+    </script>
+
+
+</body>
+</html>

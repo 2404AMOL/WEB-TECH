@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ecf0f3;
+}
+
+.Wrapper{
+    border: 1px solid red;
+    padding: 30px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.Wrapper,
+.Wrapper .Img-Area,
+.Social-Icons a,
+.Wrapper .Button{
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff,3px 3px 5px #ecced1;
+}
+.Wrapper .Img-Area{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid red;
+
+}
+
+.Img-Area .Inner-Area{
+    height: calc(100% -25px);
+    width: calc(100% -25px);
+}
+
+.Inner-Area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border:1px #f8030b;
+
+}
+
+.Wrapper .Name{
+    font-size: 23px;
+    font-weight: 500px;
+    color: #31344b;
+    margin: 10px 0 5px 0;
+}
+
+.Wrapper .About{
+    font-weight: 400;
+    color: #44476a;
+    font-size: 16px;
+}
+
+.Wrapper .Social-Icons{
+    margin: 15px 0 25px 0;
+}
+
+.Social-Icons a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 50%;
+    position: relative;
+}
+.Social-Icons a:hover:before,
+.Button:hover::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ecf0f3;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #ffffff,inset 3px 3px 5px #ecced1;
+
+}
+.Social-Icons a i{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.Social-Icons a.Fb i{
+    color: #0d11f9;
+}
+
+.Social-Icons a.Insta i{
+    color: #f8030b;
+}
+
+.Social-Icons a.LinkedIn i{
+    color: #0d11f9;
+}
+.Social-Icons a.GitHub i{
+    color: #040404;
+}
+
+
+.Wrapper .Button{
+    position: relative;
+    width: 70%;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #31344b;
+    z-index: 4;
+}
+
+
+.Button:hover::before{
+    border-radius: 5px;
+    z-index: -1;
+}

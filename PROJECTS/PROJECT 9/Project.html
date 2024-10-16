@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #edf1f4;
+        }
+        main{
+            height: 500px;
+            width: 82%;
+            /* border: 1px solid; */
+            margin: 100px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .Containers{
+            height: 400px;
+            width: 30%;
+            /* border: 1px solid; */
+            border-radius: 10px;
+            background-color: #ffffffe8;
+            box-shadow: 1px 1px 15px white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Images{
+            margin-top: 4%;
+            height: 100px;
+            width: 100px;
+            /* border: 1px solid; */
+            border-top-left-radius: 73% 40%;
+            border-top-right-radius: 27% 43%;
+            border-bottom-right-radius: 38% 57%;
+            border-bottom-left-radius: 62% 60%;
+            box-shadow: 0 4px 24px 0 rgba(103,151,255,.15),0 12px 64px 0 rgba(103,151,255,.15);
+            background-size: cover;
+            transition: all .5s linear;
+
+        }
+        .Content{
+            width: 74%;
+        }
+        .Content h1{
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+        }
+        .Content p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 17px;
+            color: #989898;
+            min-height: 100px;
+            letter-spacing: .5px;
+            text-align: center;
+        }
+        #Img1 img{
+            width: 65%;
+            position: relative;
+            top: 4%;
+            left: 5%;
+        }
+        
+        #Img2 img{
+            width: 70%;
+            position: relative;
+            top: 4%;
+            left: 5%;
+        }
+
+        #Img3 img{
+            width: 70%;
+            position: relative;
+            top: 4%;
+            left: 5%;
+        }
+        hr{
+            height: 5px;
+            width: 10%;
+            border-radius: 10px;
+            border: none;
+            position: relative;
+            left: 45%;
+        }
+
+        .Containers:hover{
+            hr{
+                width: 0px;
+                perspective: 200px;
+                transition: width .5s, linear;   
+                animation: anim1 .5s linear forwards;
+            } .Images {
+                transform: rotate(-360deg);
+            }
+        }
+        @keyframes anim1 {
+            0%{
+                position: relative; 
+                left: -50%;
+                width: 0%;
+            }
+            100%{
+                position: relative;
+                left: 0%;
+                width: 95%;
+                background-color: blue;
+                transform-origin: left;
+                transform-style: preserve-3d;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="Containers" id="Container1">
+            <div class="Images" id="Img1">
+                <img src="./ASSETS/IMAGES/urban.png" alt="">
+            </div>
+            <div class="Content">
+                <h1>In-House Company</h1>
+                <p>The student will get direct benefits of on-going USA projects.</p>
+            </div>
+            <hr>
+        </div>
+        <div class="Containers" id="Container2">
+            <div class="Images" id="Img2">
+                <img src="./ASSETS/IMAGES/wifi.png" alt="">
+            </div>
+            <div class="Content">
+                <h1>Free Wi-Fi</h1>
+                <p>We understand how the internet is important for students, thus we have provided free internet service to students to learn confidently.</p>
+            </div>
+            <hr>
+        </div>
+        <div class="Containers" id="Container3">
+            <div class="Images" id="Img3">
+                <img src="./ASSETS/IMAGES/research.png" alt="">
+            </div>
+            <div class="Content">
+                <h1>24 X 7 Lab Facilities</h1>
+                <p>For Practice on the Core Subjects, We have opened a fully loaded computer lab.</p>
+            </div>
+            <hr>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,496 @@
+1.What is HTML5?
+2.Difference between HTML4 &  HTML5?
+3.Tell me/ write the synatx of html5?
+4. Which extension we used to save a html file?
+5. What is <!Doctype>?Is it necessary to the HTML5?
+6.List out the new features of HTML5?
+7.What do you mean by tag, element and attribute?
+or
+Difference between the tag element and attribute.
+Tell the some examples of attribute?
+
+8.What is canvas? How to write a canvas?
+
+9.What is the sessionstorage object in HTML? How to create and access?
+ Ans.The sessionStorage object stores the data for one session. The data is deleted when the user closes the browser window. like below we can create and access a sessionStorage here we created “blogName” as session.
+   <script type=”text/javascript”>
+   sessionStorage.blogName=”OnlineInterviewQuestions”;
+   document.write(sessionStorage.name);
+</script>
+
+
+10.What is the difference between Html5 application cache and regulate Html browser cache?
+Ans. The new HTML5 specification allows browsers to prefetch some or all of website assets such as HTML files, images, CSS, JavaScript, and so on, while the client is connected. It is not necessary for the user to have accessed this content previously, for fetching this content. In other words, application cache can prefetch pages that have not been visited at all and are thereby unavailable in the regular browser cache. Prefetching files can speed up the site’s performance, though you are of course using bandwidth to download those files initially.
+
+
+11. What is the use of LocalStorage in HTML5?
+Ans. Before HTML5 LocalStores was done with cookies. Cookies are not very good for large amounts of data, because they are passed on by every request to the server, so it was very slow and in-effective.
+In HTML5, the data is NOT passed on by every server request, but used ONLY when asked for. It is possible to store large amounts of data without affecting the website’s performance.and The data is stored in different areas for different websites, and a website can only access data stored by itself.
+And for creating localstores just need to call localStorage object like below we are storing name and address.
+   <script type=”text/javascript”>
+localStorage.name=”ABC”;
+localStorage.address=”New Delhi India.”;
+document.write(localStorage.address);
+  </script>
+
+12. Can you list the new input type attributes in HTML5?
+Ans.tel The input is of type telephone number
+search The input field is a search field
+url a URL
+email One or more email addresses
+datetime A date and/or time
+date A date
+month A month
+week A week
+time The input value is of type time
+datetime-local A local date/time
+number A number.
+range A number in a given range.
+color A hexadecimal color, like #82345c
+placeholder Specifies a short hint that describes the expected value of an input field.
+
+
+13. What do you understand by HTML tags? How many tags are required to create a web page in HTML5?
+Ans. A set of characters enclosed within angular braces (<> or </>) that develop a formatted command for a web page is called an HTML tag. General syntax of an HTML5 tag is:
+<tag>.….</tag>
+
+Tags help in sending instructions to the web browser on what to display and how to display. A minimum of 3 tags are required for creating a web page in HTML5:
+
+<head>
+<body>
+<html>
+
+14.Please explain the various formatting tags in HTML5.
+Ans.
+<b> - Used for making the text bold.
+<big> - Used for increasing the font size of the text by one unit.
+<del> - Used to display the deleted text.
+<em> - Used for making the text italic with added semantics importance.
+<i> - Used to make the text italic.
+<ins> - Used for displaying the added text.
+<mark> - Used for highlighting the text.
+<small> - Used to decrease the font size of the text by one unit.
+<strong> - Used for telling the browser that the text is important.
+<sub> - Used for making the text a subscript.
+<sup> - Used to make the text a superscript.
+<u> - Used for underlining the text.
+
+Note: HTML5 formatting tags are grouped into two categories:
+
+Logical tags: Used for adding some logical or semantic value to the text.
+Physical tags: Used for adding to the visual appearance to the text.
+
+15.Explain the <figure> tag in HTML5.
+Ans.The <figure> tag is used for specifying self-contained content, such as diagrams and photos, in an HTML5 web page. Although the content of the figure element is related to the main flow of the document, its position is independent of the same, i.e., if removed, it will not affect the main flow of the document.
+
+16.:Explain the various new tags introduced by HTML5 in Media Elements.
+Ans.HTML5 introduces the following five new tags in Media Elements:
+
+<audio>: Eliminates the need for additional plugins for playing audio content like audio streams and music.
+<embed>: Embeds an external application or content
+<source>: Adds multimedia resources like audio, picture, and video.
+<track>: Adds caption files or subtitles while the multimedia file is playing.
+<video>: Adds video content like embedded video content, movie clips, and videos.
+
+17.What is a <meta> tag in HTML5?
+Ans.
+The <meta> tag offers metadata about the HTML5 document. This metadata is machine-parsable. Typically, meta elements are used for specifying:
+
+Author name
+Keywords
+Page description
+The metadata supplied by the <meta> tag is used by:
+
+Web browsers to know how to display content or reload a web page
+
+Search engines to know about keywords on a web page
+
+Other web services.
+
+Note: HTML5 introduces a new method that allows web developers and designers to take control of the viewport with the <meta> tag.
+
+
+18.Which tag is used for representing the result of a calculation? Explain its attributes.
+Ans.
+The <output> tag is used for representing the result of a calculation. It has three attributes:
+
+for - Represents the relationship among the elements used in the calculation and the result.
+
+form - Represents the form(s) the output element belongs to.
+
+name - Represents a name for the output element.
+
+19.List all the tags removed from the HTML5.
+Ans.
+<acronym>
+<applet>
+<basefont>
+<big>
+<bigcenter>
+<center>
+<dir>
+<frame>
+<frameset>
+<font>
+<noframes>
+<strike>
+<tt>
+
+20. Is it possible for a web page to have multiple <header> and <footer> elements?
+Ans. Yes, a webpage can have many <header> and <footer> elements. Both tags are specifically designed to serve their respective purposes with respect to their parent section.
+
+Hence, not only the page <body> must have the <header> and <footer> tags, but also does every <article> and <section> elements. Although a <footer> element might not be always necessary for every <article> and <section> tags, a <header> element must always be there.
+
+21. What is the correct usage of the following HTML5 semantic elements:
+Ans. i) <article>
+     This HTML5 element is intended to have a self-contained composition, being logically independent and capable to be created outside the web page without losing the concerned meaning. Suitable examples for the <article> element are blog posts, news snippets, and release updates.
+
+ii) <footer>
+  We use the <footer> element to hold information meant to appear at the end of a particular section of a web page. Typically, it contains additional information about the section. Suitable examples for this HTML5 element include an author bio and helpful links.
+
+iii) <header>
+   This essential HTML5 element contains introductory as well as navigation information about a certain section or the body of a web page. Suitable examples for the <header> element are author name, publication date, number of views, and table of contents.
+
+iv) <section>
+  Intended for holding content having a common purpose or theme, the <section> element serves as a flexible container in HTML5. The comments section, sharing section, and related articles section are some of the best examples of this HTML5 element.
+
+
+22.:Explain the difference between Canvas and SVG elements.
+Ans.
+1. API Animation
+
+Canvas has no provision for API animation. SVG, on the contrary, is capable of API animation.
+
+2. Change Accommodation
+
+Each drawn shape in SVG is remembered as an object by the web browser. If the attributes pertaining to an SVG object are changed, the browser automatically re-renders the shape.
+
+23.What will happen if the doctype is not specified in an HTML web page?
+Ans.:If the doctype is not specified in an HTML web page, then the web browser will be unable to interpret the new HTML5-specific tags.
+
+
+24.Explain the Advantage and Disadvantages of using HTML5.?
+Ans.Some advantages of HTML5 are:
+
+Better semantics and cleaner code.
+
+Consistency in coding a web page.
+
+Elegant and fancier forms reduced need for JavaScript.
+
+Geolocation support.
+
+Many new features that make animations and front-end elements easier to code and display on different browsers.
+
+Offline application cache which helps users to view a page even when they are not connected to the internet.
+
+
+Some disadvantages of HTML5 are:
+
+
+Only modern versions of the browsers support HTML5. Not all users use the latest version of browsers.
+
+Many features are still not stable and are in the development stage.
+
+Due to licensing issues, the rich media is compressed into multiple formats to be compatible with most browsers.
+
+***********************************************************************************************************************************
+                  CSS Interview Questions
+
+Q.1)What is CSS?
+Ans.CSS or Cascading Style Sheets is a styling language that is simple enough for HTML elements that find usage in web designing. Besides, the application of CSS is also found in XHTML.
+
+Q.2)  What are the benefits of using CSS?
+Ans.Accessibility
+
+Page reformatting
+
+Site-wide consistency
+
+Bandwidth
+
+Separation of the bandwidth of presentation.
+
+Q.2) What is meant by CSS frameworks? Give me one example of css frameworks?
+Ans.CSS frameworks are pre-planned libraries, allowing a more convenient web page styling which is also compliant with standards
+   Framework name:Bootstrap.
+
+Q.3) What is the difference between CSS2 and CSS3?
+Ans. 
+In CSS2, everything is present in a single document while CSS3 is categorized into multiple sections called modules.
+
+Graphics-related features such as Box-shadow or Border-radius, flexbox, etc. can be found which are absent incase of CSS2.
+
+Properties such as background-position, background-image, and background-repeat styles can be helpful for using multiple background images in a single webpage.
+
+CSS3 versions support many new browsers.
+
+CSS3 introduces many new selectors in the form of pseudo-elements and pseudo-classes.
+
+Q.4)Name a few CSS style components>?
+Ans. A few CSS style components include Property, Value, and Selector.
+
+Q.5)What do you understand by CSS opacity?
+Ans. The technical definition of opacity is the degree to which light is allowed to pass through an object.
+
+CSS opacity is the property used to describe the transparency of an element. Or, in other words, it explains how clear the image is.
+
+Q.6)  How can the background color of an element be changed?
+aAns. The background color of an image can be changed using the background-color property.
+
+Q.7) How many types of selector are available in css? Please tell the names?
+Ans. Id, element, class, universal, group.
+
+Q.8)The background color of an image can be changed using the background-color property.?
+Ans. Background-repetition property controls the repetition of images in the background. Use no-repeat if the image is to be displayed once in the background.
+ simply its write as 
+background-repeat:repeat
+
+Q.9) What is the use of the background-position property?
+Ans.  It can be used to define the initial position of a background image. The default position is the top left of the page. The positions that can be set include top, bottom, left, right, and center.
+
+
+Q.10)Which property controls the image scroll in the background?
+Ans.Image scroll in the background can be controlled using the background-scroll property.
+
+
+Q.11) Why should background and color be used as separate properties?
+Ans.  This is done with mainly two purposes:
+
+1.It makes the style sheets more legible. Background property, which is complex in itself, becomes all the more complex with color.
+
+2.Color is an in-built property while the background is not one. And this can lead to a lot of confusion. 
+
+
+
+Q.12)What are the ways to integrate CSS as a web page?
+Ans. There are three methods to integrate CSS in the form of a web page:
+
+1. Embedded: There can be a style element inside the head element inside which we can place the code.
+
+2.Inline: CSS applied HTML elements can be found using style attributes.
+
+3.Imported or Linked: In the case of linked or imported CSS, the CSS is placed in an external file and a link element is used to link it.
+
+
+Q.13) Name some CSS style components.
+Ans. Some CSS Style components are:
+
+Selector
+Property
+Value
+
+
+Q.14) What is the use of CSS Opacity?
+Ans. The CSS opacity property is used to specify the transparency of an element.
+
+Q.15)  Explain universal selector.
+Ans. The universal selector matches the name of any of the element type instead of selecting elements of a specific type.
+
+Q.16) What is the use of % unit?
+Ans. It is used for defining percentage values.
+
+Q.17) What is RWD?
+Ans. RWD stands for Responsive Web Design. This technique is used to display the designed page perfectly on every screen size and device, for example, mobile, tablet, desktop and laptop. You don't need to create a different page for each device.
+
+Q.18) What are the benefits of CSS sprites?
+Ans. If a web page has a large number of images that take a longer time to load because each image separately sends out an HTTP request. The concept of CSS sprites is used to reduce the loading time for a web page because it combines the various small images into one image. It reduces the number of HTTP requests and hence the loading time.
+
+Q.19) What is the difference between inline, inline-block, and block?
+Ans.
+ Block Element: The block elements always start on a new line. They will also take space for an entire row or width. List of block elements are <div>, <p>.
+
+
+Inline Elements: Inline elements don't start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are <a>, <span> , <strong>, and <img> tags. 
+
+
+Inline Block Elements: Inline-block elements are similar to inline elements, except they can have padding and margins and set height and width values.
+
+
+Q.20) What are Pseudo elements and Pseudo classes?
+Ans. Pseudo-elements allows us to create items that do not normally exist in the document tree, for example ::after.
+
+::before
+::after
+::first-letter
+::first-line
+::selection
+
+Pseudo-classes select regular elements but under certain conditions like when the user is hovering over the link.
+
+:link
+:visited
+:hover
+:active
+:focus
+Example of the pseudo-class, In the below example, the color applies to the anchor tag when it’s hovered.
+
+
+Q.21) What property is used for changing the font face?
+Ans. We can use the font-family property for achieving this. The font-family property is used for specifying what font needs to be applied on the targetted DOM element.
+
+
+Q.22)  How is border-box different from content-box?
+Ans. content-box is the default value box-sizing property. The height and the width properties consist only of the content by excluding the border and padding.
+
+The border-box property includes the content, padding and border in the height and width properties.
+
+Q.23) Why should we use float property in CSS?
+Ans. The float property is used for positioning the HTML elements horizontally either towards the left or right of the container.
+
+Q.24) What is a z-index, how does it function?
+Ans. z-index is used for specifying the vertical stacking of the overlapping elements that occur at the time of its positioning. It specifies the vertical stack order of the elements positioned that helps to define how the display of elements should happen in cases of overlapping.
+
+
+Q.25) What are the properties of flexbox?
+ Ans. The properties of flexbox are as follows:
+
+flex-direction: 
+flex-wrap: 
+wrap-reverse: 
+align-items: 
+align-content: 
+
+Q.26) How does Calc work?
+Ans. The CSS3 calc() function allows us to perform mathematical operations on property values.
+
+
+************************************************************************************************************************************************************************************
+                                                 JavaScript Interview Questions
+
+Q.1)  What is JavaScript?
+Ans. JavaScript is a scripting language. It is different from Java language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation. 
+
+
+Q.2) List some of the advantages of JavaScript.
+Ans. Some of the advantages of JavaScript are:
+
+Server interaction is less
+Feedback to the visitors is immediate
+Interactivity is high
+Interfaces are richer
+
+Q.3) List some of the disadvantages of JavaScript.
+ Ans. Some of the disadvantages of JavaScript are:
+
+No support for multithreading
+No support for multiprocessing
+Reading and writing of files is not allowed
+No support for networking applications.
+
+Q.4) Define anonymous function
+Ans. It is a function that has no name. These functions are declared dynamically at runtime using the function operator instead of the function declaration. The function operator is more flexible than a function declaration. It can be easily used in the place of an expression. For example:
+
+var display=function()  
+{  
+  alert("Anonymous Function is invoked");  
+}  
+display();  
+
+
+Q.5)  Can an anonymous function be assigned to a variable?
+Ans. Yes, you can assign an anonymous function to a variable.
+
+Q.6)  If we want to return the character from a specific index which method is used?
+Ans. The JavaScript string charAt() method is used to find out a char value present at the specified index.
+
+Q.7) How to use external JavaScript file?
+Ans. <script type="text/javascript" src="message.js"></script>  
+
+Q.8) Is JavaScript case sensitive language?
+Ans. Yes, JavaScript is a case sensitive language.
+
+Q.9) What is BOM?
+Ans. BOM stands for Browser Object Model. It provides interaction with the browser. The default object of a browser is a window. So, you can call all the functions of the window by specifying the window or directly.
+
+Q.10) What is DOM? What is the use of document object?
+Ans. DOM stands for Document Object Model. A document object represents the HTML document. It can be used to access and change the content of HTML.
+
+Q.11) How to write a comment in JavaScript?
+Ans. There are two types of comments in JavaScript.
+
+Single Line Comment: It is represented by // (double forward slash)
+Multi-Line Comment: Slash represents it with asterisk symbol as /* write comment here */
+
+Q.12) How to create a function in JavaScript?
+Ans. To create a function in JavaScript, follow the following syntax.
+
+function function_name(){  
+//function body  
+}  
+
+Q.13) What are the different data types present in JavaScript?
+Ans. here are two types of data types in JavaScript:
+
+Primitive data types
+Non- Primitive data types
+
+Primitive Data Types:
+String
+Boolean 
+Number
+null 
+undefined
+typeof
+bigInit
+
+Non-Primitive data types:
+Object
+Array
+
+Q.14) What is the difference between == and ===?
+Ans. The == operator checks equality only whereas === checks equality, and data type, i.e., a value must be of the same type.
+
+Q.15) How to write HTML code dynamically using JavaScript?
+Ans. The innerHTML property is used to write the HTML code using JavaScript dynamically. Let's see a simple example:
+
+document.getElementById('mylocation').innerHTML="<h2>This is heading using JavaScript</h2>";
+
+Q.16)  How to create objects in JavaScript?
+Ans. There are 3 ways to create an object in JavaScript.
+
+By object literal
+By creating an instance of Object
+By Object Constructor
+
+
+Q.17) What does the isNaN() function?
+Ans. The isNan() function returns true if the variable value is not a number. 
+
+Q.18) Difference between Client side JavaScript and Server side JavaScript?
+Ans. Client-side JavaScript comprises the basic language and predefined objects which are relevant to running JavaScript in a browser. The client-side JavaScript is embedded directly by in the HTML pages. The browser interprets this script at runtime.
+
+Server-side JavaScript also resembles client-side JavaScript. It has a relevant JavaScript which is to run in a server. The server-side JavaScript are deployed only after compilation.
+
+Q.19)  How can you check if the event.preventDefault() method was used in an element?
+Ans. When we use the event.defaultPrevent() method in the event object returns a Boolean indicating that the event.preventDefault() was called in a particular element.
+
+Q.20) What are the pop-up boxes available in JavaScript?
+Ans. Alert Box
+    Confirm Box
+    Prompt Box
+
+Q.21)  How to handle exceptions in JavaScript?
+Ans. By the help of try/catch block, we can handle exceptions in JavaScript. JavaScript supports try, catch, finally and throw keywords for exception handling.
+
+Q.22) What is this keyword in JavaScript?
+Ans. The this keyword is a reference variable that refers to the current object.
+
+Q.23) What is the requirement of debugging in JavaScript?
+Ans. To perform debugging, we can use any of the following approaches:
+
+Using console.log() method
+Using debugger keyword
+
+Q.24) What is the role of a strict mode in JavaScript?
+Ans.. The JavaScript strict mode is used to generates silent errors. It provides "use strict"; expression to enable the strict mode. This expression can only be placed as the first statement in a script or a function
+
+Q.25)  What is the use of Math object in JavaScript?
+Ans. The JavaScript math object provides several constants and methods to perform a mathematical operation.
+
+Q.26)  What is the use of a Date object in JavaScript?
+Ans. The JavaScript date object can be used to get a year, month and day. You can display a timer on the webpage by the help of JavaScript date object.
+
+
+Q.30) List Of Events
+Ans.

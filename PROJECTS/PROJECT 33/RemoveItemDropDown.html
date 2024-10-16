@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select {
+            width: 200px;
+            height: 30px;
+            background-color: cyan;
+        }
+        button{
+            background-color: red;
+            height: 35px;
+            width: 15%;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            box-shadow: 1px 2px 3px red;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <select id="myDropdown">
+        <option value="option1">Apple</option>
+        <option value="option2">Banana</option>
+        <option value="option3">Mango</option>
+        <option value="option4">Guava</option>
+        <option value="option5">Watermelon</option>
+        <option value="option6">CusteredApple</option>
+        <option value="option7">Sapato</option>
+
+
+
+      </select>
+
+      <button onclick="removeItem()">Remove Item</button>
+
+      <script>
+        function removeItem(){
+            let dropDown = document.getElementById("myDropdown");
+
+            dropDown.remove(dropDown.SelectedIndex);
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./DigitalClock.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="DigitalClock">
+            <div id="Times">
+                <div class="Screen" data-text="Hours">
+                    <div class="Time" id="Hour"></div> 
+                </div>
+                <div class="Screen" data-text="Minutes">
+                    <div class="Time" id="Minute"></div> 
+                </div>
+                <div class="Screen" data-text="Seconds">
+                    <div class="Time" id="Second"> </div>
+                </div>
+                <div class="Screen">
+                    <div class="Time" id="AmPm"></div>
+                </div>
+            </div>
+            <div id="Buttons">
+                <div class="button">
+                    <button id="Start" onclick="Start()">START</button>
+                </div>
+                <!-- <div class="button">
+                    <button id="Resume">RESUME</button>
+                </div> -->
+                <div class="button">
+                    <button id="Stop" onclick="stop()">STOP</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./DigitalClock.js"></script>
+</body>
+</html>

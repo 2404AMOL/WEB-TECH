@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-size: 15px;
+    background-color: black;
+    color: white;    
+}
+video{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  }
+
+  .Box{
+    height: 550px;
+    width: 1100px;
+    border: 1px solid;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  #img1 {
+    height: 520px;
+    width: 850px;
+    border: 1px solid;
+    margin: 0 auto;
+    background-image: url(./IMAGES/Taj\ Mahal.jpg);
+    background-size: cover;
+  }
+  #img2{
+    height: 520px;
+    width: 850px;
+    border: 1px solid;
+    margin: 0 auto;
+    background-image: url(./IMAGES/Hawa\ Mahal.jpg);
+    background-size: cover;
+  }
+  #img3{
+    height: 520px;
+    width: 850px;
+    border: 1px solid;
+    margin: 0 auto;
+    background-image: url(./IMAGES/Victoria\ Memorial.jpg);
+    background-size: cover;
+  }
+  #img4{
+    height: 520px;
+    width: 850px;
+    border: 1px solid;
+    margin: 0 auto;
+    background-image: url(./IMAGES/Red\ Fort.jpg);
+    background-size: cover;
+  }
+  #img5{
+    height: 520px;
+    width: 850px;
+    border: 1px solid;
+    margin: 0 auto;
+    background-image: url(./IMAGES/Humayun\'s\ Tomb.jpg);
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 35px;
+    width: 375px;
+    font-size: 1.55rem;
+    font-weight: bolder;
+  }
+  
+  figcaption{
+    font-weight: bolder;
+    color: cyan;
+    background-color: red;
+    text-align: center;
+  }
+
+  #main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    padding-right: 17px;
+    margin-top: 50px;   
+}
+p{
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif,'Times New Roman', Times;
+}
+details{
+    width: 100%;
+    font-family: sans-serif;
+    border: 2px solid  rgb(250, 4, 4);
+}
+details p{
+    padding: 20px;
+    color: black;
+    background-color: white;
+}
+summary{
+    padding: 20px;
+    border: 1px solid blue;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+}
+section{
+    width: 100%;
+    height: 30%;
+}
+
+

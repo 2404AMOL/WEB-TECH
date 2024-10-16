@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    filter: blur(20);
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+ /*! ************************************* NAVBAR STARTS************************************************** */
+#Navbar{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+#Title {
+    width: 190px;
+    height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.55rem;
+    font-weight: bolder;
+}
+
+nav{
+    height: 130px;
+    width: 44%;
+    /* border: 1px solid; */
+    margin-left: 50rem;
+}
+li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+a{
+    display: inline-block;
+    height: 75px;
+    width: 150px;
+    line-height: 70px;
+    text-decoration: none;
+    background-image:linear-gradient(rgba(254, 237, 4, 0.7),rgba(254, 142, 4, 0.8),rgba(254, 104, 4, 0.9)) ;
+    box-shadow: 2px 4px 15px 2px rgba(254, 104, 4, 0.9);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+a:hover{
+    margin-top: -10px;
+    transform: rotateY(20deg),translateY(20deg);
+}
+
+/*! ******************************************* NAVBAR ENDS ********************************************  */
+
+/*! ******************************************* ABOUT START ********************************************  */
+#About{
+    height: 100vw;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+#About-Container1{
+    height: 800px;
+    width: 100%;
+    margin-top: 50px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    height:650px;
+    width: 400px;
+    border: 1px solid;
+    border-radius: 30px;
+    box-shadow: -10px -4px 5px 7px red;
+}
+.box:hover{
+    box-shadow: 10px 7px 7px 11px red;
+    background-color: cyan;
+}
+.img{
+    height: 250px;
+    width: 250px;
+    border: 1px solid;
+    margin: 50px auto;
+    border-radius: 30px;
+    box-shadow: -10px -4px 5px 7px black;
+}
+
+.img:hover{
+    box-shadow: 10px 7px 7px 11px black;
+}
+#Html{
+    margin-left: 190px;
+}
+#Html img{
+    width: 100%;
+}
+#Css{
+    margin-right: 190px;
+}
+#Css img{
+    width: 70%;
+    margin: 0px 0px 0px 30px;
+}
+
+#About-Container2{
+    height: 900px;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#Js{
+    margin-left: 190px;
+}
+#Js img{
+    width: 100%;
+}
+#React{
+    margin-right: 190px;
+}
+#React img{
+    width: 100%;
+    margin: 20px 0px 0px 10px;
+}
+/*! ******************************************* ABOUT ENDS ********************************************  */

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-color: #edf1f4c1;
+        }
+        #Bulb{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .bulbs{
+            height: 300px;
+            width: 300px;
+            /* border: 1px solid; */
+            border-radius: 50%;
+            background-color: #c7ededad;
+        }
+        #Cap{
+            height: 200px;
+            width: 68%;
+            margin: 0 auto;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .caps{
+            height: 100px;
+            width: 130px;
+            /* border: 1px solid; */
+            border-top: none;
+            margin-top: -2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: rgb(60, 58, 58);
+            filter: drop-shadow(1px 10px 15px black);
+        }
+        .lines{
+            height: 15px;
+            width: 100%;
+            /* border: 1px solid; */
+            background-color: black;
+        }
+        #Buttons{
+            height: 200px;
+            width: 90%;
+            margin: auto;
+            /* border: 1px solid; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        button{
+            height: 55px;
+            width: 150px;
+            font-size: 15px solid;
+            border: none;
+            font-weight: 900;
+            font-family: 'Poppins',sans-serif;
+        }
+        .off{
+            background-color: #d3cdcd;
+            box-shadow: 1px 4px 10px #fff;
+        }
+        .off:focus{
+            box-shadow:inset 1px 10px 15px 35px #fff,inset 10px -15px 35px #fff;
+        }
+        #Red{
+            background-color: red;
+            filter: drop-shadow(1px 4px 10px rgba(255, 0, 0, 0.553));
+        }
+        #Red:focus{
+            box-shadow:inset 1px 10px 25px 30px red,inset -10px -25px 30px red;
+        }
+        #Yellow{
+            background-color: yellow;
+            filter: drop-shadow(1px 2px 3px yellow);
+        }
+        #Yellow:focus{
+            box-shadow:inset 1px 10px 25px 30px yellow,inset -10px -25px 30px yellow;
+        }
+        #Blue{
+            background-color: blue;
+            filter: drop-shadow(1px 2px 3px blue);
+        }
+        #Blue:focus{
+            box-shadow:inset 1px 10px 25px 30px blue,inset -10px -25px 30px blue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="Bulb">
+            <div class="bulbs" id="RedBulb"></div>
+            <div class="bulbs" id="YellowBulb"></div>
+            <div class="bulbs" id="BlueBulb"></div>
+        </div>
+        <div id="Cap">
+            <div class="caps">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </div>
+            <div class="caps">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </div>
+            <div class="caps">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </div>
+        </div>
+        <div id="Buttons">
+            <button id="Red" onclick="RedOn()">ON</button>
+            <button class="off" id="Off" onclick="RedOff()">OFF</button>
+            <button id="Yellow" onclick="YellowOn()">ON</button>
+            <button class="off" id="Off" onclick="YellowOff()">OFF</button>
+            <button id="Blue" onclick="BlueOn()">ON</button>
+            <button class="off" id="Off" onclick="BlueOff()">OFF</button>
+        </div>
+    </main>
+
+    <script>
+        let red=document.getElementById("RedBulb");
+        let yellow=document.getElementById("YellowBulb");
+        let blue=document.getElementById("BlueBulb");
+
+
+        function RedOn() {
+            red.style.backgroundColor="red"
+            red.style.filter="drop-shadow(1px 15px 35px red)";
+
+        }
+        function RedOff() {
+            red.style.backgroundColor="#c7ededad"
+            red.style.filter="none";
+        }
+        
+        function YellowOn() {
+            yellow.style.backgroundColor="yellow"
+            yellow.style.filter="drop-shadow(1px 15px 35px yellow)";
+
+        }
+        function YellowOff() {
+            yellow.style.backgroundColor="#c7ededad"
+            yellow.style.filter="none";
+        }
+
+        function BlueOn() {
+            blue.style.backgroundColor="blue"
+            blue.style.filter="drop-shadow(1px 15px 35px blue)";
+
+        }
+        function BlueOff() {
+            blue.style.backgroundColor="#c7ededad"
+            blue.style.filter="none";
+        }
+
+        
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNAL</title>
+    <style>
+        body{
+            overflow-y:hidden ;
+        }
+        main{
+            overflow: hidden;
+        }
+        #Signal{
+            height: 400px;
+            width: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #3f3e3e;
+            border-radius: 30px;
+            filter: drop-shadow(10px 20px 30px black);
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            /* border: 1px solid; */
+            border-radius: 50%;
+            background-color: white;
+            animation: signAnim 11s linear infinite;
+        }
+        #Poll{
+            height: 350px;
+            width: 55px;
+            /* border: 1px solid; */
+            margin:  0 auto;
+            background-color:teal;
+            filter: drop-shadow(10px 20px 30px teal);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div id="Signal">
+            <div class="circle" id="circle1"></div>
+            <div class="circle" id="circle2"></div>
+            <div class="circle" id="circle3"></div>
+        </div>
+        <div id="Poll">
+
+        </div>
+    </main>
+
+    <script>
+        let circle1 = document.getElementById("circle1");
+        let circle2 = document.getElementById("circle2");
+        let circle3 = document.getElementById("circle3");
+        function update() {
+            let user = prompt("Enter The Color");
+            let Red=["Red","red","RED","rEd","rED","ReD","REd"]
+            let Orange=["Orange","ORANGE","orAnge","orange","ORange","oRANGE","orANge"]
+            let Green=["Green","GREEN","green","gREEN","GreEn","GREEn"]
+            if(Red.includes(user))
+            {
+                circle1.style.backgroundColor=user;
+                circle1.style.filter="drop-shadow(1px 1px 10px red)";
+            }
+            else if(Orange.includes(user)) 
+            {
+                circle2.style.backgroundColor=user;
+                circle2.style.filter="drop-shadow(1px 1px 10px orange)";
+            }
+            else if (Green.includes(user)) {
+                circle3.style.backgroundColor=user;
+                circle3.style.filter="drop-shadow(1px 1px 10px green)";
+            }
+        }
+        update();
+    </script>
+</body>
+</html>

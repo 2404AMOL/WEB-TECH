@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            height: 700px;
+            width: 100%;
+            /* border: 1px solid; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+            
+        #txt{
+            height: 600px;
+            width: 100%;
+            position: absolute;
+            top: -50px;
+            /* border: 1px solid; */
+            font-size: 5rem;
+            font-weight: 900;
+            text-align: center;
+            line-height: 400px;
+            color: #FFf;
+            text-shadow: 1px 2px 3px black,1px 2px 7px red,2px 3px 11px blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="txt"></p>
+    </div>
+    <script>
+        let counter=11;
+
+        let countdown = setInterval(() => {
+            counter--;
+            let text = document.getElementById("txt").innerHTML=counter;
+            if(counter==0){
+                clearInterval(countdown);
+                document.getElementById("txt").innerHTML="Happy New Year";
+                let element = document.getElementById("txt");
+                element.style.backgroundImage = "url(./b6f9266a0d77423c5ecec5570dd7995c.gif)";
+                element.style.backgroundRepeat = "no-repeat";
+                element.style.backgroundSize = "cover";
+                element.style.backgroundPosition =  "center";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

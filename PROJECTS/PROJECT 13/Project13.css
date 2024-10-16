@@ -1,0 +1,127 @@
+body{
+    background-color: #1b99fa;
+}
+
+#Container{
+    height: 650px;
+    width: 650px;
+    margin: 0 auto;
+    background-image: url(./IMAGES/INDIA/Hardik-Pandya-1200x1745.png);
+    background-size: 400px 500px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #1b99fa;
+    box-shadow: -1px -2px 7px 9px #32a6ffb0
+    
+    
+}
+#Logo{
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.India{
+    height: 150px;
+    width: 150px;
+    /* border: 1px solid black; */
+    background: url(./IMAGES/INDIA/INDIA.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Players{
+    margin-top: 24px;
+    height: 420px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box{
+    height: 135px;
+    width: 124px;
+    /* border: 1px solid; */
+}
+.img{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    margin: 0 auto;
+}
+#img1{
+    background-image: url(./IMAGES/INDIA/ishan-kishan.png);
+    background-size: 83%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img2{
+    background-image: url(./IMAGES/INDIA/shubman-gill.png);
+    background-size: 83%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img3{
+    background-image: url(./IMAGES/INDIA/Tilak\ verma.png);
+    background-size: 92%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img4{
+    background-image: url(./IMAGES/INDIA/Surykumar-Yadav.png);
+    background-size: 92%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img5{
+    background-image: url(./IMAGES/INDIA/Sanju-Samson.png);
+    background-size: 83%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img6{
+    background-image: url(./IMAGES/INDIA/Hardik-Pandya-1200x1745.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img7{
+    background-image: url(./IMAGES/INDIA/yashasvi-jaiswal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img8{
+    background-image: url(./IMAGES/INDIA/Axar_Patel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img9{
+    background-image: url(./IMAGES/INDIA/Arshdeep_Singh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img10{
+    background-image: url(./IMAGES/INDIA/kuldeep_Singh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img11{
+    background-image: url(./IMAGES/INDIA/yuzvendra-chahal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text{
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    /* border: 1px solid; */
+}

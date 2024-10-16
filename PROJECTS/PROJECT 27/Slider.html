@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Slider{
+            height: 500px;
+            width: 74%;
+            margin: 100px auto;
+        }
+        #Slider #SlideImage{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="Slider">
+        <img src="./image/Basundi.jpg" alt="" id="SlideImage">
+    </div>
+
+    <script>
+        let image = [
+                "./image/Basundi.jpg",
+                "./image/KajuKari.jpg",
+                "./image/MuttonCurry.jpg",
+                "./image/Paneer Gravee.jpg",
+                "./image/PuranPoli.jpeg"
+        ]
+
+        let i = 0;
+
+        function Slide(){
+
+            document.getElementById("SlideImage").src = image[i];
+
+            if(i<image.length-1){
+                i++;
+            }
+            else{
+                i=0;
+            }
+        }
+        setInterval(Slide,1100);
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: dodgerblue;
+        }
+        table{
+            border: 1px solid black;
+            background-color: black;
+            color: red;
+
+
+        }
+        button{
+            height: 40px;
+            width: 155px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 18px;
+            color: white;
+            font-family: "Poppins"sans-serif;
+            background: red;
+            box-shadow: 1px 2px 3px red;
+            position: relative;
+            left:45%;
+            margin-top: 5%;
+        }
+        td{
+            font-weight: 700;
+            font-size: 18px;
+            color: white;
+            font-family: "Poppins"sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <table id="myTable" border="1px solid" align="center" cellspacing="10px" cellpadding="10px">
+        <tr>
+            <td>Row1 Cell1</td>
+            <td>Row1 Cell2</td>
+            <td>Row1 Cell3</td>
+            <td>Row1 Cell4</td>
+        </tr>
+        <tr>
+            <td>Row2 Cell1</td>
+            <td>Row2 Cell2</td>
+            <td>Row2 Cell3</td>
+            <td>Row2 Cell4</td>
+        </tr>
+    </table>
+
+    <button onclick="insertRow()">INSERT ROW</button>
+
+    <script>
+        function insertRow(){
+            let table = document.getElementById("myTable");
+            let rows = table.insertRow(2);
+
+            var cell1 = rows.insertCell(0);
+            var cell2 = rows.insertCell(1);
+            var cell3 = rows.insertCell(2);
+            var cell4 = rows.insertCell(3);
+
+            cell1.innerHTML = "New Cell1";
+            cell2.innerHTML = "New Cell2";
+            cell3.innerHTML = "New Cell3";
+            cell4.innerHTML = "New Cell4";
+
+        }
+    </script>
+</body>
+</html>

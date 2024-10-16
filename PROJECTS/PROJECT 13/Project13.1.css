@@ -1,0 +1,106 @@
+body{
+    background-color: #fff700;
+}
+#Container{
+    height: 650px;
+    width: 650px;
+    border: 1px solid yellow;
+    margin: 15px auto;
+    /* border:13px solid #fff; */
+    background-color: #fff700;
+    background-image: url(./IMAGES/CSK/Dhoni.png);
+    background-size: 700px 400px;
+    background-repeat: no-repeat;
+    box-shadow: -2px -2px 9px 11px yellow;
+}
+#Logo{
+    height: 190px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.CskLogo{
+    height: 190px;
+    width: 200px;
+    background-image: url(./IMAGES/CSK\ LOGO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Players{
+    height: 390px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    height: 115px;
+    width: 115px;
+    /* border: 1px solid; */
+}
+.img{
+    height: 90px;
+    width: 90px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+.text{
+    font-family: 'Lato';
+    font-weight: 900;
+    text-align: center;
+    font-size: 15px;
+}
+
+#Img1{
+    background-image: url(./IMAGES/CSK/Devon\ Convay.png);
+    background-size: cover;
+}
+#Img2{
+    background-image: url(./IMAGES/CSK/Ruturaj.png);
+    background-size: cover;
+}
+#Img3{
+    background-image: url(./IMAGES/CSK/Shivam\ Dube.png);
+    background-size: cover;
+}
+#Img4{
+    background-image: url(./IMAGES/CSK/Moeen\ Ali.png);
+    background-size: cover;
+}
+#Img5{
+    background-image: url(./IMAGES/CSK/Ambati\ Rayadu.png);
+    background-size: cover;
+}
+#Img6{
+    background-image: url(./IMAGES/CSK/Ravindra\ Jadeja.png);
+    background-size: cover;
+}
+#Img7{
+    background-image: url(./IMAGES/CSK/MsDhoni.png);
+    background-size: cover;
+}
+#Img8{
+    background-image: url(./IMAGES/CSK/Maheesh\ Theekshana.png );
+    background-size: cover;
+}
+#Img9{
+    background-image: url(./IMAGES/CSK/Matheesha\ Pathiran.png);
+    background-size: cover;
+}
+#Img10{
+    background-image: url(./IMAGES/CSK/Deepak\ Chahar.png);
+    background-size: cover;
+}
+#Img11{
+    background-image: url(./IMAGES/CSK/Tushar\ Deshpande.png);
+    background-size: cover;
+}

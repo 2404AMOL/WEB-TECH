@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #print{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="print"></h1>
+    <h2 id="time"></h2>
+    <script>
+        let date = new Date();
+
+       let display =document.getElementById("print")
+
+        console.log(date);
+        let currentHour=date.getHours();
+
+        let greeting="";
+        
+        if(currentHour>=6 && currentHour<12)
+        {
+            window.alert("☕️Good Morning☕️");
+            greeting="☕️Good Morning☕️";
+        }
+        else if(currentHour>=12 && currentHour<17)
+        {
+            window.alert("☀️Good Afternoon☀️");
+            greeting="☀️Good Afternoon☀️";
+        }
+        else if(currentHour>=17 && currentHour<21)
+        {
+            window.alert("🌅Good Evening🌅");
+            greeting="🌅Good Evening🌅";
+        }
+        else
+        {
+            window.alert("😴Good Night😴")
+            greeting="😴Good Night😴";
+        }
+
+        display.innerText=greeting;
+
+        let time =document.getElementById("time");
+        time.innerHTML=date.toLocaleTimeString();
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #edf1f4;
+        }
+        .Calculator{
+            position: relative;
+            /* border: 2px solid; */
+            width: 340px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),-15px -15px 20px #fffb;
+        }
+        .Heading{
+            margin-left: 13.74rem;
+            font-size:11px;
+        }
+        .Calculator .Buttons{
+            position: relative;
+            display: grid;
+        }
+        .Calculator .Buttons #value{
+            border: none;
+            position: relative;
+            grid-column: span 4;
+            user-select: none;
+            overflow: none;
+            width: 100%;
+            text-align: end;
+            color: rebeccapurple;
+            height: 100px;
+            line-height: 100px;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),inset -5px -5px 20px #fff;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            padding: 0 20px;
+            font-size: 2em;
+            font-weight: 500;
+        }
+        .Calculator .Buttons span{
+            position: relative;
+            padding: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),-5px -5px 20px #fff;
+            margin: 10px;
+            cursor: pointer;
+            user-select: none;
+            min-width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #666;
+            border: 2px solid #edf1f4;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),-5px -5px 20px #fff;
+            border-radius: 10px;
+        }
+
+        .Calculator .Buttons span:active{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),inset -5px -5px 20px #fff;
+            color: red;
+        }
+        #EqualTo{
+            grid-row: span 2;
+            color: white;
+            border: 2px solid #edf1f4;
+            background-color: red;
+        }
+        #Clear{
+            grid-column: span 2;
+            color: white;
+            background-color:blue;
+            border: 2px solid #edf1f4;
+        }
+        #Del{
+            background-color: rgb(211, 142, 12);
+            color: white;
+        }
+        #Num{
+            background-color: #666;
+            color: white;
+        }
+        #Plus{
+            color: white;
+            background-color: rgb(36, 251, 3);
+            font-weight: 900;
+        }
+        #Minus{
+            color: white;
+            font-weight: 900;
+            background-color: rgb(36, 251, 3);
+        }
+        #Star{
+            color: white;
+            font-weight: 900;
+            background-color: rgb(36, 251, 3);
+        }
+        #Slash{
+            color: white;
+            font-weight: 900;
+            background-color: rgb(36, 251, 3);
+        }
+        #Dot{
+            background-color: wheat;
+            color: white;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="Calculator">
+        <h6 class="Heading">CASIO 991MS</h6>
+        <div class="Buttons">
+            <input id="value"></input>
+            <span onclick="display('1')" id="Num">1</span>
+            <span onclick="display('2')" id="Num">2</span>
+            <span onclick="display('3')" id="Num">3</span>
+            <span onclick="display('4')" id="Num">4</span>
+            <span onclick="display('5')" id="Num">5</span>
+            <span onclick="display('6')" id="Num">6</span>
+            <span onclick="display('7')" id="Num">7</span>
+            <span onclick="display('8')" id="Num">8</span>
+            <span onclick="display('9')" id="Num">9</span>
+            <span onclick="display('0')" id="Num">0</span>
+            <span onclick="display('.')" id="Dot">.</span>
+            <span onclick="display('+')" id="Plus" class="Button">+</span>
+            <span onclick="display('-')" id="Minus" class="Button">-</span>
+            <span onclick="display('*')" id="Star" class="Button">*</span>
+            <span onclick="display('/')" id="Slash" class="Button">/</span>
+            <span onclick="Calculate('=')" id="EqualTo">=</span>
+            <span onclick="Delete('.')" id="Del">Del</span>
+            <span onclick="Clear()" id="Clear">Clear</span>
+        </div>
+    </div>
+
+    <script>
+        let OutputScreen=document.getElementById("value")
+
+        function display(num) {
+            OutputScreen.value+=num;
+        }
+
+        function  Calculate() {
+            try{
+                OutputScreen.value=eval(OutputScreen.value)
+            }
+            catch(err)
+            {
+                alert("Invalid")
+            }  
+        }
+
+        function Clear(){
+            OutputScreen.value= ""
+            
+        }
+
+        function Delete(){
+            OutputScreen.value=OutputScreen.value.slice(0,-1);
+        }
+    </script>
+</body>
+</html>

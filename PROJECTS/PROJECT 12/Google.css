@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./Images/rough-horn-ga9c1073da_1920.jpg);
+    background-size: cover;
+}
+
+nav{
+    width: 500px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 63rem;
+    gap: 1rem;
+    list-style: none;
+}
+nav li{
+    font-family: 'Lato'Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav li:hover{
+    color: orange;
+}
+
+#Mic{
+    width: 11px;
+    margin-top: 28px;
+    margin-left: 36.35rem;
+    position: absolute;
+    z-index: 1;
+}
+
+#Search{
+    position: absolute;
+    z-index: 1;
+    width: 25px;
+    margin-top: 24px;
+    margin-left: 5.85rem;
+    position: absolute;
+    z-index: 1;
+
+}
+
+#Google{
+    height: 190px;
+    width: 700px;
+    margin: auto;
+    margin-top: 15rem;
+    /* border: 2px solid; */
+    /* background-color: yellow; */
+
+}
+#Google h1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+#span{
+    width: 350px;
+    font-size: 5rem;
+    margin: auto;
+    font-weight: bolder;
+}
+
+#span :nth-child(1){
+    color: blue;
+}
+#span :nth-child(2){
+    color: brown;
+}
+#span :nth-child(3){
+    color: rgb(255, 225, 0);
+}
+#span :nth-child(4){
+    color: blue;
+}
+#span :nth-child(5){
+    color: green;
+}
+#span :nth-child(6){
+    color: brown;
+}
+
+#Input{
+    height: 40px;
+    width: 535px;
+    margin: auto;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: medium;
+    border-radius: 30px;
+    padding:0 40px 0px 45px;
+}
+
+#Tabs1{
+    height: 150px;
+    width: 550px;
+    /* background-color: yellow;  */
+    justify-content: center;
+    margin: auto; 
+    margin-left: 30rem;
+    display: inline-flex;
+    
+}
+
+#Tabs1Icon{
+    gap: 1;
+    height: 95px;
+    width: 185px;
+
+    justify-content: space-around;
+}
+
+#Tabs1Icon{
+    margin-left: 1.55rem;
+}
+
+#face{
+    width: 55px;
+    background-color:blue;
+    border-radius: 50%;
+}
+
+#insta{
+    width: 55px;
+    background-color:wheat;
+    border-radius: 50%;
+}
+
+#tel{
+    width: 55px;
+    background-color:cyan;
+    border-radius: 50%;
+}
+
+#twitt{
+    width: 55px;
+    background-color:cyan;
+    border-radius: 50%;
+}
+#git{
+    width: 55px;
+    background-color:white;
+    border-radius: 50%;
+}
+#link{
+    width: 55px;
+    background-color:white;
+    border-radius: 50%;
+}
+
+h5{
+    color: white;
+}

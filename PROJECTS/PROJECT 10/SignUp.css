@@ -1,0 +1,92 @@
+.Container{
+       height: 550px;
+       width: 380px;
+       border: 2px solid;
+       margin: 0 auto; 
+       margin-top: 5rem;
+       border-radius: 30px; 
+       background-color: rgb(23, 15, 80);     
+}
+h1{
+    display: inline-flex;
+    margin-top: 10px;
+    margin-left: 9rem;
+    color: white;
+}
+h3{
+    color: rgb(39, 177, 232);
+    margin-top: -2rem;
+    display: inline-flex;
+    margin-left: 8rem;
+}
+#Images{
+    height: 70px;
+    display: flex;
+    justify-content:space-around;
+}
+#Images img{
+    height: 55px;
+    width: 55px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: red;
+}
+#Images :nth-child(1){
+    background-color: yellow;
+}
+#Images :nth-child(2){
+    background-color: rgb(255, 145, 0);
+}
+#Images :nth-child(3){
+    background-color: skyblue;
+}
+#Text{
+    height: 40px;
+    display: flex;
+    margin-top: -1.55rem;
+    justify-content: space-around;
+}
+#Text :nth-child(1){
+    color: yellow;
+}
+#Text :nth-child(2){
+    color:rgb(255, 145, 0);
+}
+#Text :nth-child(3){
+    color:skyblue;
+}
+#Text h5{
+   margin-left:2px;
+}
+.Inputs{
+    height: 250px;
+  
+}
+.Inputs input{
+    height: 35px;
+    width: 250px;
+    margin-top: 1rem;
+    margin-left: 3.55rem;
+    border-radius: 30px;
+}
+#SignUp{
+    height: 55px;
+    width: 300px;
+    border-radius: 30px;
+    margin-left: 2.55rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;
+    background: linear-gradient(90deg,red,red,yellow);
+}
+#Footer{
+    display: inline-flex;
+    margin-left: 3rem;
+}
+#Footer :nth-child(1){
+    color: white;
+}
+#Footer :nth-child(2){
+    color: orange;
+    margin-left: 5px;
+}
